@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    tools:context="com.android.developer.exam.main.ActivityMain">
+
+    <!-- Monthly sales button -->
+    <Button
+        android:id="@+id/btn_monthly_sales"
+        style="@style/TextButtonTheme"
+        android:text="Monthly Sales"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hourly_ac"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Activity hourly count button -->
+    <Button
+        android:id="@+id/btn_hourly_ac"
+        style="@style/TextButtonTheme"
+        android:text="@string/hourly_activity_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_monthly_sales" />
+
+</android.support.constraint.ConstraintLayout>
